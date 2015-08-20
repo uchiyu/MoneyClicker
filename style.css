@@ -1,0 +1,57 @@
+﻿body
+{
+    font-size: 30px;
+}
+
+#sectionLeft {
+    bottom: 0;
+    left: 0;
+    min-width: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 340px;
+}
+
+#moneyTree {
+    cursor: pointer;
+    width: 286px;
+    height: 456px;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+
+#titleLeft {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 35px;
+    top: 30px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    width: 276px;
+}
+
+#totalMoney {
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 10px;
+    padding: 2px 0;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width:  276px;
+}
+
+.separatorLeft, .separatorRight {
+    background: url("img/woodtexture.gif") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 16px;
+    z-index: 1;
+}
+
+.separatorLeft {
+    left: 300px;
+}
