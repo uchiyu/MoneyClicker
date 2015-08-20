@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Money Clicker</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="JS/clickTree.js"></script>
+</head>
+<body>
+    <div id="sectionLeft" style="cursor: auto">
+        <canvas id="canvasLeft" style="z-index:5" width="284" height="914"></canvas>
+        <div id="titleLeft" class="title">A tree that bears money</div>
+        <div id="totalMoney">TotalMoney: <br>$</div>    
+        <img src="img/tree.gif" id="moneyTree" onclick="clickTree()">
+    </div>
+    <div class="separatorLeft"></div>
+    <div id="sectionMiddle" style="cursor: auto"></div>
+    <div id="sectionRight" style="cursor: auto"></div>
+    
+
+    <script>
+        initMoney();
+    </script>
+</body>
+</html>
