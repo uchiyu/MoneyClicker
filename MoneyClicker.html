@@ -8,18 +8,28 @@
     <script type="text/javascript" src="JS/clickTree.js"></script>
     <!--JQUERYをネット経由で仕様-->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--cookieを簡単に記述するためのライブラリ-->
     <script src="JS/js-cookie-master/src/js.cookie.js"></script>
+    <!--JQUERYをネット経由で仕様-->
+    <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
 </head>
 <body>
     <div id="sectionLeft" style="cursor: auto">
         <canvas id="canvasLeft" style="z-index:5" width="284" height="914"></canvas>
         <div id="titleLeft" class="title">A tree that bears money</div>
-        <div id="totalMoney">TotalMoney: <br>$</div>    
+        <div id="totalMoney">TotalMoney: <br>$</div>
         <img src="img/tree.gif" id="moneyTree" onclick="clickTree()">
     </div>
-    <div class="separatorLeft"></div>
-    <div id="sectionMiddle" style="cursor: auto"></div>
-    <div id="sectionRight" style="cursor: auto"></div>
+    <div class="separatorLeft">
+        
+    </div>
+    <div id="sectionMiddle" style="cursor: auto">
+        <canvas id="canvasMiddle" style="z-index:5" width="284" height="914"></canvas>
+    </div>
+    <div id="sectionRight" style="cursor: auto">
+        <canvas id="canvasRight" style="z-index:5" width="284" height="914"></canvas>
+        <input type="button" name="nextPhase" value="go next month" onclick="stokTransition()" style="position:absolute; right:0px; bottom:0px" /> >
+    </div>
     
     <script>
         initMoney();
